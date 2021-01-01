@@ -11,20 +11,20 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         try {
-//            System.out.println("Enter Lat of Location 1: ");
-//            double lat1 = Double.parseDouble(sc.nextLine().split(" ")[0]);
-//            System.out.println("Enter Long of Location 1: ");
-//            double long1 = Double.parseDouble(sc.nextLine().split(" ")[0]);
-//
-//            System.out.println("Enter Lat of Location 2: ");
-//            double lat2 = Double.parseDouble(sc.nextLine().split(" ")[0]);
-//            System.out.println("Enter Long of Location 2: ");
-//            double long2 = Double.parseDouble(sc.nextLine().split(" ")[0]);
-//
-//            Point point1 = new Point(lat1, long1);
-//            Point point2 = new Point(lat2, long2);
-            Point point1 = new Point(25.351737, 82.957145);
-            Point point2 = new Point(25.345341, 82.971252);
+            System.out.println("Enter Lat of Location 1: ");
+            double lat1 = Double.parseDouble(sc.nextLine().split(" ")[0]);
+            System.out.println("Enter Long of Location 1: ");
+            double long1 = Double.parseDouble(sc.nextLine().split(" ")[0]);
+
+            System.out.println("Enter Lat of Location 2: ");
+            double lat2 = Double.parseDouble(sc.nextLine().split(" ")[0]);
+            System.out.println("Enter Long of Location 2: ");
+            double long2 = Double.parseDouble(sc.nextLine().split(" ")[0]);
+
+            Point point1 = new Point(lat1, long1);
+            Point point2 = new Point(lat2, long2);
+//            Point point1 = new Point(25.351737, 82.957145);
+//            Point point2 = new Point(25.345341, 82.971252);
 
             InterpolateController interpolator = new InterpolateController();
             ArrayList<Point> pointList = interpolator.getConnectingPoints(point1, point2);
