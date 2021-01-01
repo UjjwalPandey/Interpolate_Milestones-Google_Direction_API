@@ -23,8 +23,6 @@ public class Main {
 
             Point point1 = new Point(lat1, long1);
             Point point2 = new Point(lat2, long2);
-//            Point point1 = new Point(25.351737, 82.957145);
-//            Point point2 = new Point(25.345341, 82.971252);
 
             InterpolateController interpolator = new InterpolateController();
             ArrayList<Point> pointList = interpolator.getConnectingPoints(point1, point2);
